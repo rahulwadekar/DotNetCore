@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <h3>@*@ViewData["PageTitle"]*@ @ViewBag.PageTitle</h3>
+
+    @{
+        //var employee = ViewData["employee"] as EmployeeManagement.Models.Employee;
+        var employee = ViewBag.employee; // No Type Casting is required in case of ViewBag
+
+    }
+
+    <div>
+        Name: @employee.Name
+    </div>
+    <div>
+        Email: @employee.Email
+    </div>
+    <div>
+        Department: @employee.Department
+    </div>
+</body>
+</html>
+
+
